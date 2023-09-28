@@ -91,7 +91,7 @@ p {
 .progress-bar {
     height: 12px;
     background: var(--color-dbrown);
-    width: 0%;
+    width: 0;
 }
 
 
