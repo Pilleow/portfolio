@@ -1,9 +1,21 @@
-// When the user scrolls the page, execute myFunction
 window.onscroll = function() {onScroll()};
 window.onload = function() {onLoad()};
 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show");
+        }
+    })
+});
+
 const BG_SCROLL_MOD = .8; // 1.0 = no scroll, 0.0 = normal scroll
 var bgscroll = 0;
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
 
 function onScroll() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;

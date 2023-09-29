@@ -6,6 +6,22 @@
     --color-dbrown: #5E503F;
 }
 
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+::selection {
+    background: var(--color-lbrown);
+    color: var(--color-black);
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
 html {
     background-color: var(--color-lbrown);
     max-width: 900px;
@@ -14,6 +30,7 @@ html {
 }
 
 body {
+    padding-top: 3.5em;
     background-color: var(--color-whitee);
     min-height:100vh;
     color: var(--color-black);
@@ -25,13 +42,22 @@ body {
 .mainContainer {
     padding-left:4em;
     padding-right:4em;
-    padding-top:4em;
 }
 
 .blinkingCursor {
     color: var(--color-whitee);
     background-color: var(--color-whitee);
     animation: cursor-blink 1.5s steps(1) infinite;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-5%);
+    transition: all .5s;
+}
+.show {
+    opacity: 1;
+    transform: translateX(0%);
 }
 
 .icon {
@@ -45,26 +71,107 @@ body {
 
 .imageLeft {
     float: left;
-    margin-right: 3em;
     height:min-content;
 }
 
 .imageRight {
     float: right;
-    margin-left: 3em;
     height:min-content;
+}
+
+.alignLeft {
+    text-align: left !important;
+}
+
+.monosp {
+    font-size: larger;
+    font-family: monospace !important;
+}
+
+ul {
+    list-style: "> ";
+}
+
+.bigList li {
+    font-size: larger;
+    padding-top: .7em;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.noBulletList {
+    padding-left: 0;
+    list-style: none !important;
 }
 
 .mainTitle {
     font-family: monospace !important;
-    background-color: var(--color-dbrown);
+    background-color: var(--color-dbrown) !important;
     color: var(--color-whitee);
     padding: 5px;
     width: inherit;
+    line-height: 1.2em;
+    background: conic-gradient(from -135deg at 100% 50%, var(--color-lbrown) 90deg, #0000 0)
+    0 var(--p, 0%),
+    conic-gradient(from -135deg at 2em 50%, #0000 90deg, var(--color-lbrown) 0) 100%
+    var(--p, 0%);
+    background-size: var(--s, 0%) 200%;
+    background-repeat: no-repeat;
+    transition: 0.4s ease-in, background-position 0s;
 }
 
-.flex {
+.mainTitle:hover {
+    --p: 100%;
+    --s: calc(50% + 1em);
+}
+
+.highlight {
+    font-family: monospace !important;
+    font-weight: bold;
+    background-color: var(--color-lbrown) !important;
+    color: var(--color-whitee);
+    padding: 5px 15px;
+    background: linear-gradient(var(--color-dbrown) 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+    transition: .4s, background-position 0s;
+}
+
+.highlight:hover {
+    --p: 100%;
+}
+
+.subTitle {
+    font-family: monospace !important;
+    background-color: var(--color-dbrown) !important;
+    color: var(--color-whitee);
+    padding: 5px 15px;
+    width: inherit;
+    background: linear-gradient(var(--color-lbrown) 0 0);
+    background-size: 200% .08em;
+    background-position: 200% 100%;
+    background-repeat: no-repeat;
+    transition: background-size .3s, background-position .3s .3s;
+}
+
+.subTitle:hover {
+    transition: background-size .3s .3s, background-position .3s;
+    background-size: 200% 100%;
+    background-position: 100% 100%;
+}
+
+.flexMain {
     display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    padding-bottom: 2em;
+}
+
+.flexSubVert {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding-bottom: 2em;
 }
 
 p {
@@ -108,4 +215,38 @@ p {
     0% { transform: rotate(2deg); }
     50% { transform: rotate(-2deg); }
     100% { transform: rotate(2deg); }
+}
+
+.hidden:nth-child(2) {
+    transition-delay: 400ms;
+}
+.hidden:nth-child(3) {
+    transition-delay: 250ms;
+}
+.hidden:nth-child(4) {
+    transition-delay: 150ms;
+}
+.hidden:nth-child(5) {
+    transition-delay: 300ms;
+}
+.hidden:nth-child(6) {
+    transition-delay: 200ms;
+}
+.hidden:nth-child(7) {
+    transition-delay: 50ms;
+}
+.hidden:nth-child(8) {
+    transition-delay: 350ms;
+}
+.hidden:nth-child(9) {
+    transition-delay: 450ms;
+}
+.hidden:nth-child(10) {
+    transition-delay: 100ms;
+}
+.hidden:nth-child(11) {
+    transition-delay: 550ms;
+}
+.hidden:nth-child(12) {
+    transition-delay: 500ms;
 }

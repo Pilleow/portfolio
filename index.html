@@ -19,21 +19,79 @@
             <div class="progress-bar" id="progressBar"></div>
         </div>
 
-        <div id="aboutMe" class="mainContainer flex animateCursor">
-            <div>
-            <img class="imageLeft icon iconHover" src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-1/378118815_1776983089420563_8080985627205090056_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=fe8171&_nc_ohc=qQUJFKxWsioAX9ANBtw&_nc_ht=scontent-waw1-1.xx&oh=00_AfBbjnRfe6iL4yzmbyQUS1l_UPmbMEdPKa7Ziqd0FlPTng&oe=65198FB1" alt="[Profile Picture]">
+        <section id="about" class="mainContainer animateCursor">
+            <div class="flexMain">
+                <div>
+                <img class="imageLeft icon iconHover" src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-1/378118815_1776983089420563_8080985627205090056_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=fe8171&_nc_ohc=qQUJFKxWsioAX9ANBtw&_nc_ht=scontent-waw1-1.xx&oh=00_AfBbjnRfe6iL4yzmbyQUS1l_UPmbMEdPKa7Ziqd0FlPTng&oe=65198FB1" alt="[Profile Picture]">
+                </div>
+                <div style="width:100%">
+                    <h1 class="mainTitle"><a href="#about">~$ hello_world <span class="blinkingCursor">|</span></a></h1>
+                    <p>
+                        Hello internet. I'm Igor. Programming has always been my passion for as long as I remember <span style="font-style: italic; color: grey">(since 2017 or something xd)</span>. I find it fascinating how computers and the internet pushed our civilization so far and so quickly, making such leaps in progress, science and everyday life. Blah blah blah.
+                    </p>
+                </div>
             </div>
-            <div style="width:100%">
-                <h1 class="mainTitle">~$ hello_world <span class="blinkingCursor">|</span></h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in nisi vitae magna ornare sodales id vel velit. Fusce bibendum dolor eget aliquam pretium. Morbi molestie imperdiet interdum. In auctor nisi velit. Maecenas scelerisque arcu in dignissim mattis. Nullam egestas condimentum mauris non consectetur.
-                </p>
-            </div>
-        </div>
 
-        <div id="projects" class="mainContainer flex">
+            <div class="flexMain alignLeft">
+                <div class="flexSubVert">
+                    <div>
+                        <h2 class="subTitle">Languages</h2>
+                        <ul class="noBulletList centerText" style="width:100%;">
+                            <li class="hidden">
+                                🇵🇱 Polish <span style="color: var(--color-dbrown)">Fluent</span>
+                            </li>
+                            <li class="hidden">
+                                🇬🇧 English <span style="color: var(--color-dbrown)">Fluent</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2 class="subTitle">Education</h2>
+                        <ul class="noBulletList">
+                            <li class="centerText hidden">🎓 Jagiellonian University</li>
+                            <li class="centerText hidden" style="color: var(--color-dbrown)">Applied Computer Science</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="subTitle">Coding Experience</h2>
+                    <ul class="monosp">
+                        <li class="hidden">Java</li>
+                        <li class="hidden">Python3</li>
+                        <li class="hidden">C#, C++ & C</li>
+                        <li class="hidden">HTML, CSS & Javascript</li>
+                        <br>
+                        <li class="hidden">Git</li>
+                        <li class="hidden">Spring</li>
+                        <li class="hidden">ReactJS</li>
+                        <li class="hidden">REST APIs</li>
+                        <li class="hidden">Relational Databases</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flexMain alignLeft">
+                <div>
+                    <h2 class="subTitle">Skills</h2>
+                    <ul class="bigList centerText noBulletList">
+                        <li class="hidden"><span class="highlight">Enthusiastic</span> and passionate approach to programming.</li>
+                        <li class="hidden">Experience working in collaboration with others on <span class="highlight">team-based projects.</span></li>
+                        <li class="hidden"><span class="highlight">Quickly learning</span> new and complex ideas, technologies, topics and languages.</li>
+                        <li class="hidden">Intuitively <span class="highlight">modelling problems</span> using mathematics to find optimal and elegant solutions to problems.</li>
+                        <li class="hidden">Able to comfortably <span class="highlight">lead a team</span> on a project with deadlines.</li>
+                        <li class="hidden">Able to <span class="highlight">organize and plan</span> out a system, work, project or schedule.</li>
+                        <li class="hidden">Often entering long and efficient hours of <span class="highlight">flow state.</span></li>
+                        <li class="hidden"><span class="highlight">"An eye" for design,</span> colour and the presentation of a product.</li>
+                        <li class="hidden">Extensive knowledge of <span class="highlight">coffee beverages,</span> and how to prepare them.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mainContainer flexMain">
             <div style="width:100%">
-                <h1 class="mainTitle">~$ my_projects <span class="blinkingCursor">|</span></h1>
+                <h1 class="mainTitle"><a href="#projects">~$ my_projects <span class="blinkingCursor">|</span></a></h1>
                 <p style="text-align: right">
                     Nullam sed arcu vulputate, egestas magna a, cursus libero. Vivamus tincidunt ex vel magna dapibus, at rhoncus lorem efficitur. Maecenas sit amet euismod sem, id dignissim erat. Duis sed neque id magna feugiat venenatis. Pellentesque ornare nulla dui, vitae ultricies enim facilisis eget. Fusce non luctus lorem.
                 </p>
@@ -43,21 +101,21 @@
                     <img class="icon imageRight iconHover" src="imgs/github.png" alt="[Github Icon]">
                 </a>
             </div>
-        </div>
+        </section>
 
-        <div id="contact" class="mainContainer flex">
+        <section id="contact" class="mainContainer flexMain">
             <div>
                 <a href="mailto: pilleowo@gmail.com" target="_blank">
                     <img class="icon imageLeft iconHover" src="imgs/gmail.png" alt="[Gmail Icon]">
                 </a>
             </div>
             <div style="width:100%">
-                <h1 class="mainTitle">~$ contact_info <span class="blinkingCursor">|</span></h1>
+                <h1 class="mainTitle"><a href="#contact">~$ contact_info <span class="blinkingCursor">|</span></a></h1>
                 <p>
                     Nullam sed arcu vulputate, egestas magna a, cursus libero. Vivamus tincidunt ex vel magna dapibus, at rhoncus lorem efficitur. Maecenas sit amet euismod sem, id dignissim erat. Duis sed neque id magna feugiat venenatis. Pellentesque ornare nulla dui, vitae ultricies enim facilisis eget. Fusce non luctus lorem.
                 </p>
             </div>
-        </div>
+        </section>
     </div>
 
 
