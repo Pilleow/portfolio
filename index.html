@@ -8,92 +8,141 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="body">
-    <div>
-        <div class="progress-container">
-            <p id="footer_top">Copyright © 2023 Igor Zamojski</p>
-            <div class="progress-bar" id="progressBar"></div>
+<body id="body" class="preload">
+<div>
+    <div class="topnav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="cats.html">Cats</a>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <section id="about" class="mainContainer animateCursor">
+        <div class="flexMain flexMainAlignCenterOnCross">
+            <div>
+                <img class="imageLeft icon iconHover" src="https://avatars.githubusercontent.com/u/60982022"
+                     alt="[Profile Picture]">
+            </div>
+            <div style="width:100%">
+                <h1 class="mainTitle"><a href="#about">~$ hello_world <span class="blinkingCursor">|</span></a></h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in massa sem. Pellentesque fermentum
+                    dolor pellentesque, hendrerit lacus sit amet, sagittis neque. Vestibulum ante ipsum primis in
+                    faucibus orci luctus et ultrices posuere cubilia curae.
+                </p>
+            </div>
         </div>
-
-        <section id="about" class="mainContainer animateCursor">
-            <div class="flexMain">
+        <hr/>
+        <div class="flexMain alignLeft">
+            <div class="flexSubVert">
                 <div>
-                <img class="imageLeft icon iconHover" src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-1/378118815_1776983089420563_8080985627205090056_n.jpg?stp=dst-jpg_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=fe8171&_nc_ohc=qQUJFKxWsioAX9ANBtw&_nc_ht=scontent-waw1-1.xx&oh=00_AfBbjnRfe6iL4yzmbyQUS1l_UPmbMEdPKa7Ziqd0FlPTng&oe=65198FB1" alt="[Profile Picture]">
+                    <h2 class="subTitle">languages</h2>
+                    <ul class="noBulletList centerText" style="width:100%;">
+                        <li class="hidden">
+                            🇵🇱 Polish <span style="color: var(--color-dbrown)">Native</span>
+                        </li>
+                        <li class="hidden">
+                            🇬🇧 English <span style="color: var(--color-dbrown)">Fluent</span>
+                        </li>
+                    </ul>
                 </div>
-                <div style="width:100%">
-                    <h1 class="mainTitle"><a href="#about">~$ hello_world <span class="blinkingCursor">|</span></a></h1>
-                    <p>
-                        Hello internet. I'm Igor. Programming has always been my passion for as long as I remember <span style="font-style: italic; color: grey">(since 2017 or something xd)</span>. I find it fascinating how computers and the internet pushed our civilization so far and so quickly, making such leaps in progress, science and everyday life. Blah blah blah.
-                    </p>
+
+                <div>
+                    <h2 class="subTitle">education</h2>
+                    <ul class="noBulletList">
+                        <li class="centerText hidden">🎓 Jagiellonian University</li>
+                        <li class="centerText hidden" style="color: var(--color-dbrown)">Applied Computer Science</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="subTitle">work experience</h2>
+                    <ul class="noBulletList">
+                        <li class="centerText hidden">🩺 Newgradvets</li>
+                        <li class="centerText hidden" style="color: var(--color-dbrown)">Part-Time Software Developer</li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="flexMain alignLeft">
-                <div class="flexSubVert">
-                    <div>
-                        <h2 class="subTitle">Languages</h2>
-                        <ul class="noBulletList centerText" style="width:100%;">
-                            <li class="hidden">
-                                🇵🇱 Polish <span style="color: var(--color-dbrown)">Fluent</span>
-                            </li>
-                            <li class="hidden">
-                                🇬🇧 English <span style="color: var(--color-dbrown)">Fluent</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h2 class="subTitle">Education</h2>
-                        <ul class="noBulletList">
-                            <li class="centerText hidden">🎓 Jagiellonian University</li>
-                            <li class="centerText hidden" style="color: var(--color-dbrown)">Applied Computer Science</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="flexSubVert">
                 <div>
-                    <h2 class="subTitle">Coding Experience</h2>
+                    <h2 class="subTitle">programming experience</h2>
                     <ul class="monosp">
+                        <li class="hidden">TypeScript</li>
+                        <li class="hidden">JavaScript</li>
+                        <li class="hidden">Python</li>
                         <li class="hidden">Java</li>
-                        <li class="hidden">Python3</li>
-                        <li class="hidden">C#, C++ & C</li>
-                        <li class="hidden">HTML, CSS & Javascript</li>
-                        <br>
-                        <li class="hidden">Git</li>
-                        <li class="hidden">Spring</li>
-                        <li class="hidden">ReactJS</li>
-                        <li class="hidden">REST APIs</li>
-                        <li class="hidden">Relational Databases</li>
+                        <li class="hidden">HTML</li>
+                        <li class="hidden">CSS</li>
+                        <li class="hidden">C++</li>
+                        <li class="hidden">C</li>
                     </ul>
                 </div>
-            </div>
-
-            <div class="flexMain alignLeft">
                 <div>
-                    <h2 class="subTitle">Skills</h2>
-                    <ul class="bigList centerText noBulletList">
-                        <li class="hidden"><span class="highlight">Enthusiastic</span> and passionate approach to programming.</li>
-                        <li class="hidden">Experience working in collaboration with others on <span class="highlight">team-based projects.</span></li>
-                        <li class="hidden"><span class="highlight">Quickly learning</span> new and complex ideas, technologies, topics and languages.</li>
-                        <li class="hidden">Intuitively <span class="highlight">modelling problems</span> using mathematics to find optimal and elegant solutions to problems.</li>
-                        <li class="hidden">Able to comfortably <span class="highlight">lead a team</span> on a project with deadlines.</li>
-                        <li class="hidden">Able to <span class="highlight">organize and plan</span> out a system, work, project or schedule.</li>
-                        <li class="hidden">Often entering long and efficient hours of <span class="highlight">flow state.</span></li>
-                        <li class="hidden"><span class="highlight">"An eye" for design,</span> colour and the presentation of a product.</li>
-                        <li class="hidden">Extensive knowledge of <span class="highlight">coffee beverages,</span> and how to prepare them.</li>
+                    <h2 class="subTitle">technology experience</h2>
+                    <ul class="monosp">
+                        <li class="hidden">REST APIs</li>
+                        <li class="hidden">Linux</li>
+                        <li class="hidden">Asana</li>
+                        <li class="hidden">SQL</li>
+                        <li class="hidden">Git</li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="flexMain">
+        </div>
+    </section>
 
-        <section id="projects" class="mainContainer flexMain">
+    <section id="skills" class="mainContainer animateCursor">
+        <div class="flexMain alignLeft">
+            <div>
+                <h1 class="mainTitle"><a href="#skills">~$ skills <span class="blinkingCursor">|</span></a></h1>
+                <ul class="bigList centerText noBulletList">
+                    <li class="hidden"><span class="highlight">Quickly learning</span> new and complex
+                        technologies, topics and languages.
+                    </li>
+                    <li class="hidden"><span class="highlight">Enthusiastic</span> and passionate approach to
+                        software development.
+                    </li>
+                    <li class="hidden"><span class="highlight">Modelling problems</span> using mathematics to find
+                        optimal solutions.
+                    </li>
+                    <li class="hidden"><span class="highlight">"An eye" for design,</span> colour and the presentation
+                        of a product.
+                    </li>
+                    <li class="hidden">Able to <span class="highlight">organize and plan</span> out a system, work,
+                        project or schedule.
+                    </li>
+                    <li class="hidden">Able to comfortably <span class="highlight">lead a team</span> on a project with
+                        deadlines.
+                    </li>
+                    <li class="hidden">Extensive knowledge of <span class="highlight">coffee beverages,</span> and how
+                        to prepare them.
+                    </li>
+                    <li class="hidden">Experience working in collaboration with others on <span class="highlight">team-based projects.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="mainContainer">
+        <div class="flexMain flexMainAlignCenterOnCross invertedFlex">
             <div style="width:100%">
                 <h1 class="mainTitle"><a href="#projects">~$ my_projects <span class="blinkingCursor">|</span></a></h1>
                 <p style="text-align: right">
-                    Nullam sed arcu vulputate, egestas magna a, cursus libero. Vivamus tincidunt ex vel magna dapibus, at rhoncus lorem efficitur. Maecenas sit amet euismod sem, id dignissim erat. Duis sed neque id magna feugiat venenatis. Pellentesque ornare nulla dui, vitae ultricies enim facilisis eget. Fusce non luctus lorem.
+                    Over the years, I've worked on numerous projects, ranging from simple applications to more complex
+                    systems, covering various areas of programming.
+                    Below are some of my most interesting projects that best demonstrate my skills and passion for
+                    programming.
                 </p>
             </div>
             <div>
@@ -101,30 +150,78 @@
                     <img class="icon imageRight iconHover" src="imgs/github.png" alt="[Github Icon]">
                 </a>
             </div>
-        </section>
-
-        <section id="contact" class="mainContainer flexMain">
+        </div>
+        <hr/>
+        <div class="flexMain flexMainAlignCenterOnCross">
             <div>
-                <a href="mailto: pilleowo@gmail.com" target="_blank">
-                    <img class="icon imageLeft iconHover" src="imgs/gmail.png" alt="[Gmail Icon]">
+                <a href="https://github.com/Pilleow/doors-game" target="_blank">
+                    <img class="icon imageLeft iconHover" src="imgs/project_doorsgame.png" alt="[Project Icon]">
                 </a>
             </div>
             <div style="width:100%">
-                <h1 class="mainTitle"><a href="#contact">~$ contact_info <span class="blinkingCursor">|</span></a></h1>
-                <p>
-                    Nullam sed arcu vulputate, egestas magna a, cursus libero. Vivamus tincidunt ex vel magna dapibus, at rhoncus lorem efficitur. Maecenas sit amet euismod sem, id dignissim erat. Duis sed neque id magna feugiat venenatis. Pellentesque ornare nulla dui, vitae ultricies enim facilisis eget. Fusce non luctus lorem.
+                <p style="text-align: left">
+                    <span class="highlight">A local multiplayer couch co-op game,</span> where you battle against your
+                    friends and decide on what modifiers you apply to players. Written in C, this project
+                    uses techniques such as procedural animations to make the
+                    game as resource-efficient as possible. I bet it can run on a fridge!
                 </p>
             </div>
-        </section>
-    </div>
+        </div>
+        <hr/>
+        <div class="flexMain flexMainAlignCenterOnCross invertedFlex">
+            <div style="width:100%">
+                <p style="text-align: right">
+                    <span class="highlight">A BST/AVL tree visualizer,</span> with fully animated insertions, deletions,
+                    and search operations. The project showcases both binary search trees (BST) and AVL trees, providing
+                    an interactive, real-time representation of how these data structures work.
+                </p>
+            </div>
+            <div>
+                <a href="https://github.com/Pilleow/bst-avl-visualizer" target="_blank">
+                    <img class="icon imageRight iconHover" src="imgs/project_bstavl.png" alt="[Project Icon]">
+                </a>
+            </div>
+        </div>
+        <hr/>
+        <div class="flexMain flexMainAlignCenterOnCross">
+            <div>
+                <a href="https://github.com/Pilleow/simulations" target="_blank">
+                    <img class="icon imageLeft iconHover" src="imgs/project_simulations.png" alt="[Project Icon]">
+                </a>
+            </div>
+            <div style="width:100%">
+                <p style="text-align: left">
+                    <span class="highlight">A heuristic neural network simulation,</span> where "ants" walk around the
+                    board during the day. When the day ends, the ants in the green field survive and get to reproduce.
+                    This process is repeated until an optimal genome is created. This project also features a fire
+                    simulation as an extra cherry on top!
+                </p>
+            </div>
+        </div>
 
+    </section>
 
-    <div>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
-    </div>
+    <section id="contact" class="mainContainer flexMain flexMainAlignCenterOnCross">
+        <div>
+            <a href="mailto: pilleowo@gmail.com" target="_blank">
+                <img class="icon imageLeft iconHover" src="imgs/gmail.png" alt="[Gmail Icon]">
+            </a>
+        </div>
+        <div style="width:100%">
+            <h1 class="mainTitle"><a href="#contact">~$ contact_info <span class="blinkingCursor">|</span></a></h1>
+            <p>
+                Nullam sed arcu vulputate, egestas magna a, cursus libero. Vivamus tincidunt ex vel magna dapibus, at
+                rhoncus lorem efficitur. Maecenas sit amet euismod sem, id dignissim erat. Duis sed neque id magna
+                feugiat venenatis. Pellentesque ornare nulla dui, vitae ultricies enim facilisis eget. Fusce non luctus
+                lorem.
+            </p>
+        </div>
+    </section>
+</div>
+
+<div>
+    <script src="main.js"></script>
+</div>
 
 </body>
 </html>
