@@ -37,11 +37,16 @@ body {
     background-image: url("imgs/bg2.png");
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: large;
+    padding-bottom: 80px !important;
 }
 
 .preload * {
     transition: none !important;
     animation-duration: 0.001s !important;
+}
+
+.article p {
+    text-align: justify;
 }
 
 .catImg {
